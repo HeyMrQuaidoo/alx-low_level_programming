@@ -14,10 +14,10 @@ int main(void)
 	float floatval;
 
 	printf("Size of a char: %lu byte(s)\n", sizeof(charval));
-	printf("Size of a char: %lu byte(s)\n", sizeof(intval));
-	printf("Size of a char: %lu byte(s)\n", sizeof(longval));
-	printf("Size of a char: %lu byte(s)\n", sizeof(longlongval));
-	printf("Size of a char: %lu byte(s)\n", sizeof(floatval));
+	printf("Size of a int: %lu byte(s)\n", sizeof(intval));
+	printf("Size of a long int: %lu byte(s)\n", sizeof(longval));
+	printf("Size of a long long int: %lu byte(s)\n", sizeof(longlongval));
+	printf("Size of a float: %lu byte(s)\n", sizeof(floatval));
 
 	return (0);
 }
