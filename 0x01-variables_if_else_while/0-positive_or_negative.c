@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main - Entry point
+ * main - Checks if random number n is 
+ * positive, negative or zero
  *
  * Return: Always success(0)
  */
