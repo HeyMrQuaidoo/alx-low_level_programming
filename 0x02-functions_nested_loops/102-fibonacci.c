@@ -9,7 +9,7 @@ int main(void)
 {
 	unsigned long count, a, b;
 
-	printf("%lu", bef);
+	printf("%lu", b);
 
 	for (count = 1; count < 50; count++)
 	{
@@ -20,4 +20,4 @@ int main(void)
 	printf("\n");
 
 	return (0);
-}
+}a
