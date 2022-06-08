@@ -16,7 +16,7 @@ int main(void)
 	{
 		res = a + b;
 
-		if ((R % 2) == 0)
+		if ((res % 2) == 0)
 		{
 			sum += res;
 		}
