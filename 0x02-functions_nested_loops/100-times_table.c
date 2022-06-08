@@ -41,9 +41,9 @@ void print_times_table(int n)
 				_putchar(result + '0');
 			}
 			else
-            		{
+			{
 				_putchar(result + '0');
-            		}
+			}
 			if (b != n)
 			{
 				_putchar(',');
