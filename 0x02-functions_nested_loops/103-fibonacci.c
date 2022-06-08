@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int res = 0;
 	unsigned long int sum = 0;
 
-	while (res > 4000000)
+	while (res < 4000000)
 	{
 		res = a + b;
 
@@ -26,5 +26,6 @@ int main(void)
 	}
 
 	printf("%li\n", sum);
+	return (sum);
 	return (0);
 }
