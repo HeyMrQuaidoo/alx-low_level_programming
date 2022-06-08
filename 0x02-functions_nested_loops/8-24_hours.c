@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * print_last_digit - Function that prints
+ * jack_bauer - Function that prints
  * every minute of the day of Jack Bauer
  * , starting from 00:00 to 23:59.
- * @n: integer argument
- *a
+ *
  * Return: Always (0) Success
  */
 
-void jack_bauer (void)
+void jack_bauer(void)
 {
 	int h, m;
 
