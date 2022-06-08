@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int res = 0;
 	unsigned long int sum = 0;
 
-	while (4000000 > R)
+	while (4000000 > res)
 	{
 		res = a + b;
 
