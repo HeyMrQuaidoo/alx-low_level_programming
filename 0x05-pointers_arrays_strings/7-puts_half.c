@@ -12,22 +12,23 @@ void puts_half(char *str)
 	int curr = 0, n;
 
 	while (str[curr] != '\0')
-    {
+	{
 		curr++;
-    }
+	}
 
 	if (curr + 1 % 2 != '0')
-    {
+	{
 		n = (curr - 1) / 2;
-    }
-	else{
+	}
+	else
+	{
 		n = (curr / 2);
-    }
+	}
 	n++;
 
 	for (curr = n; str[curr] != '\0'; curr++)
-    {
-	    _putchar(str[curr]);
-    }
+	{
+		_putchar(str[curr]);
+	}
 	_putchar('\n');
 }
