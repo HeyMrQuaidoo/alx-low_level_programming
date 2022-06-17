@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * reverse_array - function that changes all lowercase
+ * *string_toupper - function that changes all lowercase
  * letters of a string to uppercase.
  * @s: len of array
  * Return: s uppercase of string
