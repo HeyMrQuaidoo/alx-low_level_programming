@@ -5,24 +5,22 @@
  * @src: src string
  * Return: dest - concatenated string
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int a;
-	int b;
+	int a = 0;
+	int b = 0;
+	int terminate;
 
-	a = 0;
-    b = 0;
-	while (dest[a] != '\0')
+	for (terminate = 0; dest[terminate];)
 	{
-		a++;
+		terminate++;
 	}
-	
-	while (src[b] != '\0')
+
+	while (b < n && src[a])
 	{
-		dest[a] = src[b];
+		dest[terminate + a] = src[a];
 		a++;
 		b++;
 	}
-	dest[a] = '\0';
 	return (dest);
 }
