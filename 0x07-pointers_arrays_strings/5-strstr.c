@@ -20,21 +20,17 @@ char *_strstr(char *haystack, char *needle)
 
 		while (*cursor)
 		{
-			if (*cursor == *word)
+			if (*word == *cursor)
 			{
 				word++;
 				cursor++;
 			}
 			else
-			{
-				break;
-			}
+			break;
 		}
 		if (*cursor == '\0')
-		{
-			return (word);
-		}
+		return (word);
 		word++;
 	}
-	return (NULL);
+	return (0);
 }
