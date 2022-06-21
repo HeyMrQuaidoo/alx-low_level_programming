@@ -13,23 +13,27 @@ char *_strstr(char *haystack, char *needle)
 	char *word = haystack;
 	char *cursor = needle;
 
-	while (*word)
+	while (*word != '\0')
 	{
 		word = haystack;
 		cursor = needle;
 
-		while (*cursor)
+		while (*cursor != '\0')
 		{
-			if (*word == *cursor)
+			if (*word != '\0' && *cursor != '\0' && *word == *cursor)
 			{
 				word++;
 				cursor++;
 			}
 			else
-			break;
+			{
+				break;
+			}
 		}
 		if (*cursor == '\0')
-		return (word);
+		{
+			return (word);
+		}
 		word++;
 	}
 	return (0);
