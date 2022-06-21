@@ -18,9 +18,9 @@ char *_strstr(char *haystack, char *needle)
 		word = haystack;
 		cursor = needle;
 
-		while (*cursor != '\0')
+		while (*word)
 		{
-			if (*word != '\0' && *cursor != '\0' && *word == *cursor)
+			if (*word == *cursor)
 			{
 				word++;
 				cursor++;
@@ -32,9 +32,9 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*cursor == '\0')
 		{
-			return (word);
+			return (haystack);
 		}
-		word++;
+		haystack++;
 	}
 	return (0);
 }
