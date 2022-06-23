@@ -2,7 +2,7 @@
 /**
  * wildcmp - function that compares two strings and returns 1 if
  * the strings can be considered identical, otherwise return 0.
- * @s1: pointer to string
+ * @s1: pointer to string.
  * @s2: pointer to string
  * Return: returns 1 if a string is a
  * equal and 0 if not.
