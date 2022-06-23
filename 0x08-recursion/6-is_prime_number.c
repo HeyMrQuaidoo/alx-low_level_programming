@@ -7,11 +7,11 @@
  */
 int _sqrt_recursion(int n)
 {
-	if (n == 1)
+	if (n == 0)
 	{
-		return (1);
+		return (0);
 	}
-	return (_sqrt_recursion_helper(n / 2, n));
+	return (_sqrt_recursion_helper(1, n));
 }
 
 /**
@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_recursion_helper(int num, int compute)
 {
-	if (num <= 0)
+	if (num * num > compute)
 	{
 		return (-1);
 	}
@@ -33,7 +33,7 @@ int _sqrt_recursion_helper(int num, int compute)
 		return (num);
 	}
 
-	return (_sqrt_recursion_helper(num - 1, compute));
+	return (_sqrt_recursion_helper(num + 1, compute));
 }
 /**
  * is_prime_number - checks if a given
