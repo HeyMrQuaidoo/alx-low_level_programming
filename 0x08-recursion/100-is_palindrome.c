@@ -27,7 +27,7 @@ int is_palindrome_helper(char *s, int i, int j)
 	{
 		return (s[i] == s[j]);
 	}
-    if (i == j)
+	if (i == j)
 	{
 		return (1);
 	}
@@ -37,7 +37,6 @@ int is_palindrome_helper(char *s, int i, int j)
 	}
 	return (is_palindrome_helper(s, i + 1, j - 1));
 }
-
 /**
  * is_palindrome - function that returns 1
  * if a string is a palindrome and 0 if not.
@@ -48,6 +47,7 @@ int is_palindrome_helper(char *s, int i, int j)
 int is_palindrome(char *s)
 {
 	int n = _strlen_recursion(s);
+
 	if (n == 0 || *s != s[n - 1])
 	{
 		return (0);
