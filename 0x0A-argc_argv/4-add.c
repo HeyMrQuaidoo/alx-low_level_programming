@@ -1,6 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * _isdigit - checks for a digit (0 through 9).
+ * @c: character to be checked
+ * Return: 1 if c is digit
+ */
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+
+/**
  * main -  program that adds positive numbers.
  * @argc: argument count
  * @argv: argument vector
@@ -8,17 +25,19 @@
  **/
 int main(int argc, char *argv[])
 {
-	int a, b;
+	int sum = 0;
 
-	if (argc <= 2)
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
+		num = _isdigit(argv[i]);
+		if (num == 0)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += num;
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-
-	printf("%d\n", a + b);
+	printf("%d\n", sum);
 	return (0);
 }
