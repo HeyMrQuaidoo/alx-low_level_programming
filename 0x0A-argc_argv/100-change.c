@@ -17,11 +17,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
-        change = atoi(argv[1]);
-        amt = 0;
-
-
+	
+	change = atoi(argv[1]);
+	amt = 0;
 
 	if (change > 25)
 	{
