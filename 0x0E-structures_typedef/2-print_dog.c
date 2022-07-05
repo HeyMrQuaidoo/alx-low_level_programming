@@ -4,7 +4,6 @@
  * print_dog - function that prints a struct dog
  *
  * @d: pointer to dog struct
- * @Return: Always success - None
  */
 void print_dog(struct dog *d)
 {
