@@ -1,9 +1,9 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <stdlib.h>
+#include <string.h>
 
-/*
- * add_node -  function that adds a new node at the
+/**
+ * add_node - function that adds a new node at the
  * beginning of a list_t list
  * @head: head to a  linked list
  * @str: str new node
