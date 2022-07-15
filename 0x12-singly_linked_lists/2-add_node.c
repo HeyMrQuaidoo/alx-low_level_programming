@@ -3,6 +3,20 @@
 #include <string.h>
 
 /**
+ * _strlen - return length of a string
+ * @str: string
+ *
+ * Return: length of string
+ */
+unsigned int _strlen(char *str)
+{
+	unsigned int i;
+
+	for (i = 0; str[i]; i++)
+		;
+	return (i);
+}
+/**
  * add_node - function that adds a new node at the
  * beginning of a list_t list
  * @head: head to a  linked list
