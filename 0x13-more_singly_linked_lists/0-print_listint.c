@@ -3,9 +3,9 @@
 
 /**
  * print_listint -  function that prints all the elements of a listint_t list.
- * @h: list of nodes to print
- *
- * Return: number of elements in the list
+ * @h: list of n
+ * Return: numbodes to print
+ *er of elements in the list
  */
 size_t print_listint(const listint_t *h)
 {
