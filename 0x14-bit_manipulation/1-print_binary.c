@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _pow_recursion - function that returns
- * the value of x raised to the power of y.
- * @x: base number
- * @y: exponent
- * Return: number raised to power of y
+ * _pow - function that returns
+ * the value of base raised to the power.
+ * @base: base number
+ * @power: exponent
+ * Return: number raised to power
  */
 unsigned long int _pow(unsigned int base, unsigned int power)
 {
