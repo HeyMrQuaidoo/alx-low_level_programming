@@ -43,7 +43,7 @@ void check_file_exists(ssize_t check, char *file, int fd_from, int fd_to)
 }
 
 /**
- * check_file_created - checks that file_to was created and/or can be written to
+ * check_file_created - checks that file_to was created and could be written to
  * @check: checks if true of false
  * @file: file_to name
  * @fd_from: file descriptor of file_from, or -1
