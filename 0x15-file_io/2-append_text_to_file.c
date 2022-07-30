@@ -6,6 +6,21 @@
 
 
 /**
+ * _strlen - function that returns the length of a string
+ * @str: pointer to string
+ *
+ * Return: length of string
+ */
+size_t _strlen(char *str)
+{
+	size_t n;
+
+	for (n = 0; str[n]; n++)
+		;
+	return (n);
+}
+
+/**
  * append_text_to_file - function that appends a text at the end of a file.
  * @filename: name of file
  * @text_content: string to append to file
