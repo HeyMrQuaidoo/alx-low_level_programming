@@ -19,7 +19,7 @@ int create_file(const char *filename, char *text_content)
 	if (file_descr >= 0)
 	{
 
-		for (curr = 0; text_content && *(text_content + curr) != '\0'; curr++)
+		for (curr = 0; text_content != NULL && *(text_content + curr) != '\0'; curr++)
 		{
 			if (write(file_descr, text_content + curr, 1) != 1)
 				return (-1);
