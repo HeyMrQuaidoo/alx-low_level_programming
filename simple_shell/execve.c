@@ -10,14 +10,14 @@ void prompt(void)
 	{
 		size_t buffer_size = 0;
 		char *prompt_text = NULL;
-        int buff_len;
+		int buff_len;
 		int status;
-		pid_t child_pid; 
-        
-        _stream_writer("$ ");
-        buff_len = getline(&prompt_text, &buffer_size, stdin);
+		pid_t child_pid;
 
-        if (buff_len == -1)
+		_stream_writer("$ ");
+		buff_len = getline(&prompt_text, &buffer_size, stdin);
+
+		if (buff_len == -1)
 			exit(98);
 		if (_strcmp(prompt_text, "exit") == 0)
 			exit(0);
