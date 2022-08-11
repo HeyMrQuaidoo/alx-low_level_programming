@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * main - shell main function
- * @argc: argument counter
- * @argv: argument vector 
- * Return - 0
+ * main - func to start simple shell
+ * @ac: No use
+ * @av: No use
+ * Return: loop.
  **/
-int main(int argc, char **argv)
+int main(int ac, char **av)
 {
-	(void) argc;
-	(void) argv;
+	(void)av;
+	(void)ac;
 
-	signal(SIGINT, controlC);
+	signal(SIGINT, run_shell);
 	prompt();
 	return (0);
 }
