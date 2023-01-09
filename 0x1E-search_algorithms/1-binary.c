@@ -1,9 +1,9 @@
 #include "search_algos.h"
 /**
 * pri_arr - prints array
-* array = array
-* start= start point
-* end = ending point
+* @array: array
+* @start: start point
+* @end: ending point
 * Return nothing
 **/
 void pri_arr(int *array, size_t start, size_t end)

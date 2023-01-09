@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
-  * advanced_binary_recursive - Searches recursively
+  * adv_binary_recursive - Searches recursively
   * @array: A pointer of the subarray to search.
   * @left: The starting index.
   * @right: The ending index.
